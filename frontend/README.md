@@ -1,3 +1,13 @@
+# Frontend project
+
+The frontend project are the visible face of the application
+
+## Philosophy
+
+- **Inspire:** have an emotional connection with our future client
+- **Simple:** require the minimum step to perform an action
+- **Performance:** Slow applications make you sleepy &#x1F4A4;
+
 ## The Architecture
 
 The frontend layer is divided into 2 projects:
