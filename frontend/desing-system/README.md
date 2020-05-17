@@ -1,4 +1,4 @@
-# Design System
+# Design System Project
 
 This is a Storybook project for content markup, style details, and build presentational components.
 
@@ -18,10 +18,10 @@ It's divided use the atomic design into:
 - **Molecules:** are groups of atoms bonded together and are the smallest fundamental units of a compound
 - **Organisms:** re groups of molecules joined together to form a relatively complex, distinct section of an interface.
 - **Templates:** consist mostly of groups of organisms stitched together to form pages.
-- without **Pages:** (why?) This section live in applicacion project
+- without **Pages:** (why?) This section lives in applicacion project
 
-For more details check [Atomic web design](https://bradfrost.com/blog/post/atomic-web-design/)
-http://smacss.com/
+For more details check [smacss](https://bradfrost.com/blog/post/atomic-web-design/)
+**Postscript:** don't delete hello.jsx component at root of components folder
 
 ### Styles Layer
 
@@ -33,10 +33,10 @@ It will be exploited that these variables are usually defined as:
 $white:    #fff !default;
 ```
 
-- **Base:** it's a framework bootstrap and its functions and mixin
+- **Base:** it's a framework Bootstrap and its functions and mixin
 - **Module:** is the css components and its derived styles
 - **Layout:** is the geometry of the page. a grid system won't be defined, but in excessive cases they will create auxiliary classes
-- **Theme:** for rewriting bootstrap variables and creating new variables
+- **Theme:** for rewriting Bootstrap variables and creating new variables
 - **State:** for animations, media query, pseudo-class, pseudo-elements, and class like this is-valid for input valid in a form (caution this class already exists in bootstrap)
 
 For more details check [Atomic web design](http://smacss.com/)
@@ -52,4 +52,18 @@ You need install ruby and sass gem in your machine and just run
 ```sh
     npm install
     npm run storybook
+```
+
+## Good Practice
+
+- You avoid using bootstrap utility classes, most of them use the !important propety.
+  _When everything is important then nothing is important_
+  **Solution:** build classes by grouping functions of utility classes. _Example:_
+
+```css
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 ```
