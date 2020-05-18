@@ -1,6 +1,10 @@
 import React from "react";
 import { Button } from "@storybook/react/demo";
+import Header from "./components/organisms/header";
 import "./styles/styles.scss";
+import silhouette from "./images/silhouette.png";
+import Logo from "./components/atoms/logo";
+import Navbar from "./components/molecules/navbar";
 
 export default { title: "Button" };
 
@@ -21,3 +25,18 @@ export const withBootstrapEmoji = () => (
 );
 
 export const withText = () => <p>Lorem ipsum dolor sit amet</p>;
+
+export const withLogo = () => <Logo />;
+export const withNavbar = () => (
+  <Navbar>
+    <a class="navbar-brand" href="#">
+      <Logo />
+    </a>
+  </Navbar>
+);
+
+export const withHeader = () => (
+  <Header fn={(e) => console.log("hola mundo")}>
+    <img className="position-absolute" src={silhouette} />
+  </Header>
+);
