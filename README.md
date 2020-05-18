@@ -72,6 +72,18 @@ The screens with their interactions are summarized in the following images
 ![Web Flow 2](flow1.jpeg)
 ![Web Flow 3](flow2.jpeg)
 
+### Wireframes
+
+These are some wireframes with the interactions on the screens
+
+#### Public application
+
+https://www.figma.com/proto/8IiTO4wArioiOJumfVN327/UBanco?node-id=6%3A15&viewport=359%2C250%2C0.11872047930955887&scaling=min-zoom
+
+#### Admin application
+
+https://www.figma.com/proto/8IiTO4wArioiOJumfVN327/UBanco?node-id=6%3A157&scaling=min-zoo
+
 ## The Architecture
 
 The project is divided into 2 layer:
