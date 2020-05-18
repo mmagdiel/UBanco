@@ -34,17 +34,6 @@ class DefaultLayout extends React.Component {
           <h3>Redux example</h3>
         </Link>
         <ConnectedCounter />
-        <ul>
-          <li>
-            <Link to="/a/">a</Link>
-          </li>
-          <li>
-            <Link to="/b/">b</Link>
-          </li>
-          <li>
-            <Link to="/c/">c</Link>
-          </li>
-        </ul>
         {this.props.children}
       </div>
     )
