@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Navbar from "../../../desing-system/src/components/molecules/navbar"
@@ -9,8 +9,19 @@ import Nav from "../../../desing-system/src/components/molecules/nav"
 import { setAmount } from "../redux/actions"
 
 const Index = ({ increment }) => {
+  const min = "10000",
+    max = "1000000",
+    step = "10000",
+    [value, setValue] = useState(min)
   return (
-    <Header fn={increment}>
+    <Header
+      min={min}
+      max={max}
+      step={step}
+      value={value}
+      onClick={increment}
+      setValue={setValue}
+    >
       <Navbar>
         <Link className="navbar-brand" to="/">
           <Logo />
