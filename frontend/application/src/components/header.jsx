@@ -7,7 +7,7 @@ var numeral = require("numeral")
 export default ({ children, min, max, step, onClick, value, setValue }) => {
   const handleChange = e => setValue(e.target.value)
   const handleClick = value => {
-    navigate("/info")
+    navigate("/registro")
     onClick(value)
   }
   return (

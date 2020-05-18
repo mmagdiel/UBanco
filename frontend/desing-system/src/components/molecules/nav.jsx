@@ -1,9 +1,10 @@
 import React from "react";
+import classNames from "classnames";
 
-export default ({ children }) => {
+export default ({ children, close }) => {
   return (
-    <div className="navbar-collapse d-flex justify-content-end">
-      <ul className="navbar-nav">
+    <div className={classNames("navbar-collapse collapse", { show: close })}>
+      <ul className="navbar-nav ml-auto">
         {children.map((child) => {
           return <li className="nav-item">{child}</li>;
         })}

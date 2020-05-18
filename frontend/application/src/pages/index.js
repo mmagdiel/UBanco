@@ -12,7 +12,8 @@ const Index = ({ increment }) => {
   const min = "10000",
     max = "1000000",
     step = "10000",
-    [value, setValue] = useState(min)
+    [value, setValue] = useState(min),
+    [close, toggleClose] = useState(false)
   return (
     <Header
       min={min}
@@ -22,18 +23,18 @@ const Index = ({ increment }) => {
       onClick={increment}
       setValue={setValue}
     >
-      <Navbar>
+      <Navbar close={close} toggleClose={toggleClose}>
         <Link className="navbar-brand" to="/">
           <Logo />
         </Link>
-        <Nav>
-          <Link className="nav-link" to="/info">
-            Info
+        <Nav close={close}>
+          <Link className="nav-link" to="/informacion">
+            Información
           </Link>
-          <Link className="nav-link" to="/blog">
-            Nostros
+          <Link className="nav-link" to="/nosotros">
+            Nosotros
           </Link>
-          <Link className="nav-link" to="/blog">
+          <Link className="nav-link" to="/cancelar">
             Cancelar
           </Link>
         </Nav>
