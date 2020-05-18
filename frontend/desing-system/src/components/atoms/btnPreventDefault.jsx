@@ -1,9 +1,9 @@
 import React from "react";
 
-export default ({ label, onClick }) => {
+export default ({ label, onClick, value }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    onClick(e);
+    onClick(value);
   };
   return (
     <button
