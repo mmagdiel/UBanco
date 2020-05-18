@@ -1,12 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import Hello from "../../../desing-system/src/components/hello"
+import Header from "../../../desing-system/src/components/organisms/header"
+import silhouette from "../images/silhouette.png"
 
 const Home = () => (
-  <Layout>
-    <Hello />
-    <p>Home</p>
-  </Layout>
+  <Header>
+    <img src={silhouette} />
+  </Header>
 )
 
 export default Home
