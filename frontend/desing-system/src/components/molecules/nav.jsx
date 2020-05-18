@@ -5,8 +5,12 @@ export default ({ children, close }) => {
   return (
     <div className={classNames("navbar-collapse collapse", { show: close })}>
       <ul className="navbar-nav ml-auto">
-        {children.map((child) => {
-          return <li className="nav-item">{child}</li>;
+        {children.map((child, item) => {
+          return (
+            <li key={"li" + item} className="nav-item">
+              {child}
+            </li>
+          );
         })}
       </ul>
     </div>

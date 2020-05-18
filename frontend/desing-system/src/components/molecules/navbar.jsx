@@ -8,11 +8,11 @@ export default ({ children, close, toggleClose }) => {
       <button
         className="navbar-toggler"
         type="button"
-        dataToggle="collapse"
-        dataTarget="#navbarSupportedContent"
-        ariaControls="navbarSupportedContent"
-        ariaExpanded="false"
-        ariaLabel="Toggle navigation"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
         onClick={handleClick}
       >
         <span className="navbar-toggler-icon"></span>
