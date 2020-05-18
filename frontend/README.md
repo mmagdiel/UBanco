@@ -30,11 +30,11 @@ import Hello from "../../../desing-system/src/components/hello";
   _Example:_ in the terminal
 
 ```sh
-    node-sass TODO
+  $  npm run styles
 ```
 
-_In gatsby.TODO_ (This reference is done, but it's good to know why exist this file)
+_In gatsby.browser_ (This reference is done, but it's good to know why exist this file)
 
 ```js
-TODO;
+import "../desing-system/src/styles.css";
 ```
