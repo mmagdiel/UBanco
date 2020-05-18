@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const Home = () => (
+const A = () => (
   <Layout>
-    <p>Home</p>
+    <p>A</p>
   </Layout>
 )
 
-export default Home
+export default A
