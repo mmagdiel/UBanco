@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../atoms/btnPreventDefault";
+import Slider from "../molecules/slider";
 
 export default ({ children, fn }) => {
   return (
@@ -14,16 +15,7 @@ export default ({ children, fn }) => {
         </h1>
         <div className="d-flex align-items-center">
           <h6 className="mr-3">Respaldandote con el financiamiento</h6>
-          <form className="form-inline">
-            <div className="form-group mr-3">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="1.000.000"
-              />
-            </div>
-            <Button label="Solicitar Credito" fn={fn} />
-          </form>
+          <Slider min="10000" max="1000000" step="10000" onClick={fn} />
         </div>
       </header>
     </div>
