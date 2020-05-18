@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "@storybook/react/demo";
-import Header from "./components/organisms/header";
 import "./styles/styles.scss";
+
+import Header from "./components/organisms/header";
 import silhouette from "./images/silhouette.png";
 import Logo from "./components/atoms/logo";
 import Navbar from "./components/molecules/navbar";

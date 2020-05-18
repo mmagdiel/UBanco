@@ -1,6 +1,6 @@
 # Frontend Layer
 
-The frontend project are the visible face of the application
+The frontend layer is the visible side of the application that's displayed to the user
 
 ## Philosophy
 

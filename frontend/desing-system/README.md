@@ -16,16 +16,16 @@ It's divided use the atomic design into:
 
 - **Atoms:** are the basic building blocks of matter
 - **Molecules:** are groups of atoms bonded together and are the smallest fundamental units of a compound
-- **Organisms:** re groups of molecules joined together to form a relatively complex, distinct section of an interface.
-- **Templates:** consist mostly of groups of organisms stitched together to form pages.
-- without **Pages:** (why?) This section lives in applicacion project
+- **Organisms:** regroups of molecules joined together to form a relatively complex, distinct section of an interface.
+- **Templates:** consists mostly of groups of organisms stitched together to form pages.
+- without **Pages:** (why?) This section lives in the application project
 
 For more details check [smacss](https://bradfrost.com/blog/post/atomic-web-design/)
-**Postscript:** don't delete hello.jsx component at root of components folder
+**Postscript:** don't delete hello.jsx component at the root of components folder
 
 ### Styles Layer
 
-The Bootstrap framework is used as the basis for writing the styles, but it won't be directly rewritten! On the contrary, it will be exported as a module in a smacss architecture, rewriting the local variables of the framework if it's necessary.
+The Bootstrap framework is used as the basis for writing the styles, but it won't be directly rewritten!, On the contrary, it will be exported as a module in a smacss architecture, rewriting the local variables of the framework if it's necessary.
 
 It will be exploited that these variables are usually defined as:
 
@@ -43,15 +43,15 @@ For more details check [Atomic web design](http://smacss.com/)
 
 ### Stories Layer
 
-Stories allow you to view the components by running npm run storybook. For the moments, the moments do not have an established order to show the components
+Stories allow you to view the components by running **npm run storybook.** For the moments, the moments do not have an established order to show the components
 
 ## Install and Play
 
 You need install ruby and sass gem in your machine and just run
 
 ```sh
-    npm install
-    npm run storybook
+  $  npm install
+  $  npm run storybook
 ```
 
 ## Good Practice
