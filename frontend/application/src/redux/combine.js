@@ -1,7 +1,8 @@
 import { createStore } from "redux"
-import { countReducer } from "./reducers"
+import { reducer } from "./reducers"
 import { composeWithDevTools } from "redux-devtools-extension"
+import { initial } from "./states"
 
-const globalStore = () => createStore(countReducer, composeWithDevTools())
+const globalStore = () => createStore(reducer, initial, composeWithDevTools())
 
 export default globalStore

@@ -1,11 +1,23 @@
-import { INCREMENT } from "./types"
-import { initialCount } from "./states"
+import { INCREMENT, SETEMAIL, SETPASSWORD } from "./types"
+import { initial } from "./states"
 
-export const countReducer = (state = initialCount, { type, payload }) => {
+export const reducer = (state = initial, { type, payload }) => {
   if (type === INCREMENT) {
     return {
       ...state,
       amount: payload,
+    }
+  }
+  if (type === SETEMAIL) {
+    return {
+      ...state,
+      email: payload,
+    }
+  }
+  if (type === SETPASSWORD) {
+    return {
+      ...state,
+      password: payload,
     }
   }
   return state
