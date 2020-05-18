@@ -1,5 +1,9 @@
 import React from "react";
 
-export default ({ children }) => (
-  <nav class="navbar fixed-top navbar-light bg-light">{children}</nav>
-);
+export default ({ children }) => {
+  return (
+    <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      {children}
+    </nav>
+  );
+};
