@@ -1,12 +1,16 @@
 import React from "react";
 
-export default ({ label, fn }) => {
+export default ({ label, onClick }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    fn(e);
+    onClick(e);
   };
   return (
-    <button className="btn btn-primary" type="submit" onClick={handleClick}>
+    <button
+      className="btn btn-primary mx-3"
+      type="submit"
+      onClick={handleClick}
+    >
       {label}
     </button>
   );
