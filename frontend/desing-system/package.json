@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@storybook/addon-viewport": "^5.3.18",
     "@storybook/preset-scss": "^1.0.2",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
