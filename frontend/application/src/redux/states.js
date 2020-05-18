@@ -1,3 +1,3 @@
 export const initialCount = {
-  count: 0,
+  amount: 0,
 }

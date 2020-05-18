@@ -1,5 +1,9 @@
 import { INCREMENT } from "./types"
 
-export const incrementCounter = () => ({
-  type: INCREMENT,
-})
+export const setAmount = payload => {
+  console.log(payload)
+  return {
+    type: INCREMENT,
+    payload,
+  }
+}
