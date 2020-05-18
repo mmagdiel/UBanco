@@ -5,7 +5,7 @@ import Logo from "../../../desing-system/src/components/atoms/logo"
 import Under from "../../../desing-system/src/components/atoms/under"
 import Nav from "../../../desing-system/src/components/molecules/nav"
 
-const Informacion = ({ increment }) => {
+const Informacion = () => {
   const [close, toggleClose] = useState(false)
   return (
     <>

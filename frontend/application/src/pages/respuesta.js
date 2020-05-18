@@ -2,10 +2,22 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Navbar from "../../../desing-system/src/components/molecules/navbar"
 import Logo from "../../../desing-system/src/components/atoms/logo"
-import Nav from "../../../desing-system/src/components/molecules/nav"
 import Under from "../../../desing-system/src/components/atoms/under"
+import Nav from "../../../desing-system/src/components/molecules/nav"
+import useData from "../hooks/useData"
+import { connect } from "react-redux"
+import PropTypes from "prop-types"
 
-const Cancelar = () => {
+const url = "http://localhost:3000/posts"
+const Respuesta = ({ amount, email, password }) => {
+  const partial = { amount, email, password }
+  const body = JSON.stringify(partial)
+  const data = useData(url, body)
+  data.then(res =>
+    Number.isInteger(res.id)
+      ? alert("Tu credito fue aprovado")
+      : console.log("Mejor la proxima")
+  )
   const [close, toggleClose] = useState(false)
   return (
     <>
@@ -20,7 +32,7 @@ const Cancelar = () => {
           <Link className="nav-link" to="/nosotros">
             Nosotros
           </Link>
-          <Link className="nav-link active" to="/cancelar">
+          <Link className="nav-link" to="/cancelar">
             Cancelar
           </Link>
         </Nav>
@@ -32,4 +44,15 @@ const Cancelar = () => {
     </>
   )
 }
-export default Cancelar
+
+const mapStateToProps = ({ amount, email, password }) => {
+  return { amount, email, password }
+}
+
+Respuesta.propTypes = {
+  amount: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+}
+
+export default connect(mapStateToProps, {})(Respuesta)
