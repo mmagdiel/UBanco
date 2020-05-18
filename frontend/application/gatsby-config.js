@@ -15,5 +15,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Playfair Display:400i,500i", "Raleway:400i,500i"],
+        },
+      },
+    },
   ],
 }

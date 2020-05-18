@@ -4,7 +4,7 @@ import silhouette from "../images/silhouette.png"
 
 const Home = () => (
   <Header>
-    <img src={silhouette} />
+    <img src={silhouette} alt="gasdfg" />
   </Header>
 )
 
